@@ -12,7 +12,7 @@ declarative nature, the flame charts produced by the browser's devtools doesn't
 really help as they are dominated by React internal methods without any clear
 indicator of where the time is being spent:
 
-![unhelpful react flame](/img/unhelpful_react_flame.png)
+![unhelpful react flame]({{ "/img/unhelpful_react_flame.png" | relative_url }})
 
 Here are a few quick tips on how to figure out where your pain points are and
 work around them (in no particular order):

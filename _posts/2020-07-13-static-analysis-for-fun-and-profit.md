@@ -37,7 +37,7 @@ proper AST parser. I've made one for Javascript/JSX called [depgraph](https://gi
 and it's proven to be very handy. It's built on top of [esprima](https://npm.im/esprima),
 and can show cyclic dependencies and subsystem usages, as well as rendering a pretty graph.
 
-![depgraph](/img/depgraph.png)
+![depgraph]({{ "/img/depgraph.png" | relative_url }})
 
 Links that may help:
 
