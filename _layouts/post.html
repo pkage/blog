@@ -8,7 +8,7 @@
     <body>
         <div class="post-layout">
             <nav>
-                <a href="/" class="nav__left">back</a>
+                <a href="{{ "/" | relative_url }}" class="nav__left">back</a>
                 <div class="nav__center">patrick kage's blog</div>
                 <div class="nav__right">{{ page.date | date_to_string }}</div>
             </nav>
