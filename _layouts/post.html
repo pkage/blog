@@ -1,0 +1,25 @@
+---
+---
+<!DOCTYPE HTML>
+<html>
+    <head>
+        {% include head.html %}
+    </head>
+    <body>
+        <div class="post-layout">
+            <nav>
+                <a href="/" class="nav__left">back</a>
+                <div class="nav__center">patrick kage's blog</div>
+                <div class="nav__right">{{ page.date | date_to_string }}</div>
+            </nav>
+            <article>
+                {{ content }}
+            </article>
+            <footer>
+                Patrick Kage &bull; {{ page.date | date_to_string }}
+            </footer>
+        </div>
+        <main>
+        </main>
+    </body>
+</html>

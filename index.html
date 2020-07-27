@@ -1,0 +1,33 @@
+---
+---
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        {% include head.html %}
+    </head>
+    <body class="index__container">
+        <div class="index">
+            <div class="about__image">
+            </div>
+            <div class="about__title">
+                patrick kage's blog <div class="about__mobileimage"></div>
+            </div>
+            <aside class="about__text">
+                I write about Python, React, and web development. Probably some other stuff too.
+                <br/><br/>
+                Find me on <a href="https://github.com/pkage">github</a>, <a href="https://twitter.com/patrick_kage">twitter</a>, <a href="mailto:patrick@ka.ge">email</a>, and on my <a href="https://ka.ge/">website</a>.
+            </aside>
+            
+            <main>
+                <ul class="posts">
+                    {% for post in site.posts %}
+                    <li>
+                        <a href="{{ post.url }}" class="post"><span class="post__date">[{{ post.date | date: "%Y-%m-%d" }}] </span>{{ post.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </main>
+        </div>
+    </body>
+</html>
