@@ -170,3 +170,6 @@ transpiler like Babel to get access to these.
   - [Nullish Coalescing on Caniuse](https://caniuse.com/#search=nullish%20coalescing)
   - [Nullish Coalescing TC39 Proposal](https://github.com/tc39/proposal-nullish-coalescing)
 
+---
+
+<sup>1</sup>: Or rather, as exciting as we're going to get in a pandemic.
