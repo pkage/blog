@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Optional Chaining and Nullish Coalescing in Javascript
+title: Optional Chaining and Nullish Coalescing
 tags: programming webdev 
 ---
 
