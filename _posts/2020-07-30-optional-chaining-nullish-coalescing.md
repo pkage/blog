@@ -92,21 +92,21 @@ is provided:
 
 ```js
 // implementation with the "||" operator
-function default(option) {
+function defaultable(option) {
     // get a default value
     option = option || 'default'
     console.log(option)
 }
 
 // some normal examples:
-default()      // 'default'
-default(42)    // 42
-default('hi!') // 'hi!'
+defaultable()      // 'default'
+defaultable(42)    // 42
+defaultable('hi!') // 'hi!'
 
 // things start to break here:
-default(0)     // 'default'
-default(false) // 'default'
-default('')    // 'default'
+defaultable(0)     // 'default'
+defaultable(false) // 'default'
+defaultable('')    // 'default'
 ```
 
 Nullish coalescing (`??`) allows for slightly smarter overriding of a default
@@ -114,21 +114,21 @@ value by only considering `null` and `undefined`:
 
 ```js
 // implementation with the "??" operator
-function default(option) {
+function defaultable(option) {
     // get a default value
     option = option ?? 'default'
     console.log(option)
 }
 
 // some normal examples:
-default()      // 'default'
-default(42)    // 42
-default('hi!') // 'hi!'
+defaultable()      // 'default'
+defaultable(42)    // 42
+defaultable('hi!') // 'hi!'
 
 // these work too!
-default(0)     // 0
-default(false) // false
-default('')    // ''
+defaultable(0)     // 0
+defaultable(false) // false
+defaultable('')    // ''
 ```
 
 This is much more intuitive, as intentionally falsey values cannot trip the
