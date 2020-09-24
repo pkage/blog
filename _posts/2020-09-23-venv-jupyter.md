@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jupyter virtual environments
+title: Virtual Environments in Jupyter
 tags: python
 ---
 
