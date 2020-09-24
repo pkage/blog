@@ -18,9 +18,11 @@ Jupyter can't find these environments by default, but thnakfully they're pretty
 easy to install:
 
 ```bash
-# create a virtual environment:
+# create a virtual environment and activate it
 $ python3 -m venv env_project
 $ source env_project/bin/activate
+
+# from inside the environment install ipykernel and register it
 (env_project) $ pip install ipykernel
 (env_project) $ ipython kernel install --user --name=project
 ```
