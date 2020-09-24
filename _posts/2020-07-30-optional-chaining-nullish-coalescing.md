@@ -134,7 +134,7 @@ defaultable('')    // ''
 This is much more intuitive, as intentionally falsey values cannot trip the
 default value.
 
-## Putting it all together
+## Putting It All Together
 
 These two operators complement each other to create an easy way to access unknown
 objects from sources such as APIs. Here's a simple (contrived) example:
