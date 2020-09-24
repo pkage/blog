@@ -24,7 +24,7 @@ $ source env_project/bin/activate
 
 # from inside the environment install ipykernel and register it
 (env_project) $ pip install ipykernel
-(env_project) $ ipython kernel install --user --name=project
+(env_project) $ python -m ipykernel install --user --name=project
 ```
 
 And the kernel should now be available in Jupyter!
