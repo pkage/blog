@@ -10,7 +10,7 @@ tags: vim, tooling
 
 It's nice to be able to author documents with a real text editor, and (imo)
 there isn't a better editor than Neovim. I've [written about setting up Vim and
-LaTeX before](./2020-10-31-vim-latex.md) but after writing my thesis in Neovim
+LaTeX before]({% post_url 2020-10-31-vim-latex %}) but after writing my thesis in Neovim
 I found myself wanting more from my latex editing experience. I had been using 
 macOS's built-in Preview.app to view the compiled file, but this came with a few
 downsides: Preview needed to be re-focused for every reload, it's geared
