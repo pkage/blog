@@ -14,7 +14,7 @@ with scripts. To avoid all that the Python community uses [virtual
 environments](https://docs.python.org/3/tutorial/venv.html), which creates a
 new python distribution for each new project.
 
-Jupyter can't find these environments by default, but thnakfully they're pretty
+Jupyter can't find these environments by default, but thankfully they're pretty
 easy to install:
 
 ```bash
