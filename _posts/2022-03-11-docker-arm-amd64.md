@@ -4,6 +4,8 @@ title: Building amd64 Docker Images on ARM in 2022
 tags: programming devops
 ---
 
+# Building amd64 Docker Images on ARM in 2022
+
 Building a Docker image on ARM can be a bit hairy, as if you're not careful
 you can end up building a fully-ARM version of your package which runs locally
 but potentially not on Intel-based servers. It used to be a pain in the butt to
