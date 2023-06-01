@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Installing Julia as a Jupyter kernel
-tags: cad, python
+tags: julia, jupyter
 ---
+
+# Installing Julia as a Jupyter kernel with IJulia
 
 As I've found myself doing this a lot recently, here's quick capture on how to
 get the wonderful [IJulia](https://github.com/JuliaLang/IJulia.jl) configured
