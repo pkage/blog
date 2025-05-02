@@ -25,4 +25,4 @@ put that in your root directory, but you can put it anywhere. Reading from
 filesystem like ZFS will compress that down and you'll end up with much less
 real space freed when you delete the file.
 
-*Thanks to [Lev Novikov](https://metaist.com) for encouraging me to write this!*
+*Thanks to [Lev Novikov](https://metaist.com) for the inspiration to write this post.*
