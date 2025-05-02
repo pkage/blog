@@ -20,6 +20,9 @@ $ sudo dd if=/dev/urandom of=/FREESPACE bs=1M count=8192
 
 This writes an 8 GiB file to the root directory called `/FREESPACE`, reading
 out from `/dev/urandom` in 8192 1MiB blocks. Superuser access is required to
-put that in your root directory, but you can put it anywhere.
+put that in your root directory, but you can put it anywhere. Reading from
+`/dev/urandom` is recommended, as if you fill the file with e.g. just zeros, a
+filesystem like ZFS will compress that down and you'll end up with much less
+real space freed when you delete the file.
 
 *Thanks to [Lev Novikov](https://metaist.com) for encouraging me to write this!*
