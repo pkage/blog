@@ -43,10 +43,10 @@ repository or deal with merges. I usually set this up with a makefile:
 REMOTE=user@host:path/to/repo
 
 copy:
-    rsync . ${REMOTE} \
-        -rav --progress --del \
-        --exclude .git \
-        --filter=':- .gitignore'
+	rsync . ${REMOTE} \
+		-rav --progress --del \
+		--exclude .git \
+		--filter=':- .gitignore'
 ```
 
 which will copy everything except the `.git` directory, respect `.gitignore`,
