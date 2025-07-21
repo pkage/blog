@@ -33,4 +33,21 @@ and on your local machine:
 $ git remote add deploy user@host:repo_name
 ```
 
+## rsync
 
+A pretty good alternative option is `rsync`, which will just copy everything in
+your local directory over to the remote without having to set up a git
+repository or deal with merges. I usually set this up with a makefile:
+
+```makefile
+REMOTE=user@host:path/to/repo
+
+copy:
+    rsync . ${REMOTE} \
+        -rav --progress --del \
+        --exclude .git \
+        --filter=':- .gitignore'
+```
+
+which will copy everything except the `.git` directory, respect `.gitignore`,
+and remove files it's not expecting to find.
